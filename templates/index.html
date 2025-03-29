@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TestMCP OpenAI</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>TestMCP OpenAI 接口测试</h1>
+        
+        <div class="section">
+            <h2>Chat Completion</h2>
+            <textarea id="chatInput" placeholder="输入你的问题..."></textarea>
+            <button onclick="sendChat()">发送</button>
+            <div id="chatResponse" class="response"></div>
+        </div>
+
+        <div class="section">
+            <h2>Text Embedding</h2>
+            <textarea id="embeddingInput" placeholder="输入要计算嵌入的文本..."></textarea>
+            <button onclick="getEmbedding()">计算</button>
+            <div id="embeddingResponse" class="response"></div>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
